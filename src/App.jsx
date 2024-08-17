@@ -1,17 +1,16 @@
+import { BrowserRouter } from 'react-router-dom'
 import './App.css'
 
 import { Header, Content, Footer } from './components'
 import { Inicial } from './pages'
+import { Router } from './Router'
 
 const App = () => {
   return (
-    <>
-      <Header/>
-      <Content>
-        <Inicial />
-      </Content>
-      <Footer creatorName="Joyce" />
-    </>
+    <BrowserRouter>
+    <Router />
+      
+    </BrowserRouter>
   )
 }
 
